@@ -1,0 +1,27 @@
+{
+  "name": "studio-day-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "vite"
+  },
+  "prettier": "@igne-agency/prettier",
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@igne-agency/eslint-config-igne": "1.4.1",
+    "@igne-agency/prettier": "1.2.0",
+    "@types/node": "22.5.4",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "7.2.0",
+    "@vitejs/plugin-react-swc": "3.5.0",
+    "eslint": "8.57.0",
+    "typescript": "5.5.4",
+    "vite": "5.4.1"
+  }
+}

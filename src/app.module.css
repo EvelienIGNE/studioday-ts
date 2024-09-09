@@ -1,0 +1,10 @@
+.container {
+  width: clamp(380px, 80vw, 992px);
+  margin: 0 auto;
+}
+
+.title {
+  padding: var(--unit-x4);
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
