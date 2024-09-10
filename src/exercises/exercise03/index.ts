@@ -1,11 +1,13 @@
 // Type this function so that numbers are either added or subtracted
 // Other operations are not permitted, so make sure typescript gives an error
 
-function operate(n1, n2, operator = "+") {
+function operate(n1 : number, n2 : number, operator: "+" | "-" | "%" = "+") {
   switch (operator) {
     case "+":
       return n1 + n2;
     case "-":
+      return n1 - n2;
+      case "%":
       return n1 - n2;
     default:
       throw new Error("Make sure this can never throw!");

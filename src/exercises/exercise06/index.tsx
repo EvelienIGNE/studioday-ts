@@ -7,6 +7,7 @@
 //
 // For this exercise, extend `TextProps` so you can pass along `variant` as a union of literal strings.
 // `variant` should be optional and default to "base"
+import * as React from "react";
 
 const textVariants = {
   base: {
@@ -17,12 +18,14 @@ const textVariants = {
   },
 };
 
-type TextProps = React.PropsWithChildren<{}>;
+type TextProps = React.PropsWithChildren<{
+  variant?: "base" | "intro";
+}>;
 
-function Text({ variant, children }: TextProps) {
+export function Text({ variant = "base", children }: TextProps) {
   return <p style={textVariants[variant]}>{children}</p>;
 }
 
 export default function Render() {
-  return <Text>I can be displayed in two variants!</Text>;
+  return <Text variant="intro">I can be displayed in two variants!</Text>;
 }

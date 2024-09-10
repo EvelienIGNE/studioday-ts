@@ -1,9 +1,9 @@
 // Define the Person type and assign it to the people array and the logPerson function
 // so that there are no more type errors.
 
-export type Person = unknown;
+export type Person = { name: string, age: number, occupation: string};
 
-export const people = [
+export const people: Person[] = [
   {
     name: "Flip Fladder",
     age: 25,
@@ -16,8 +16,8 @@ export const people = [
   },
 ];
 
-export function logPerson(person) {
-  console.log(`${person.name} (${person.age}) - ${person.occupation}`);
+export function logPerson(people: Person) {
+  console.log(`${people.name} (${people.age}) - ${people.occupation}`);
 }
 
 people.forEach(logPerson);

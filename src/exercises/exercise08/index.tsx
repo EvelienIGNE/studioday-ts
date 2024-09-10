@@ -2,7 +2,7 @@
 // You need to find the right way to type the event
 
 const Form = () => {
-  const handleSubmit = (evt: unknown) => {
+  const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
     console.log(new FormData(evt.currentTarget));
   };

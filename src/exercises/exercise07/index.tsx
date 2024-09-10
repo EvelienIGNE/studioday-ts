@@ -5,7 +5,9 @@
 // to extract `type` from `AllButtonProps`.
 
 type AllButtonProps = React.ComponentPropsWithoutRef<"button">;
-type ButtonProps = AllButtonProps & unknown;
+type ButtonProps = AllButtonProps & {
+  type: string;
+};
 
 const Button = ({ type, children, ...props }: ButtonProps) => {
   return (
@@ -17,7 +19,7 @@ const Button = ({ type, children, ...props }: ButtonProps) => {
 
 // Type `ButtonProps` so that without passing `type` it will show an error
 export default function Render() {
-  return <Button>Click me!</Button>;
+  return <Button type="button">Click me!</Button>;
 }
 
 // About: ComponentPropsWithoutRef - https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example#useful-react-prop-type-examples

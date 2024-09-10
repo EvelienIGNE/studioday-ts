@@ -8,7 +8,11 @@ type Person = {
   occupation: string;
 };
 
-type User = unknown;
+type User = {
+  role: "user" | "admin";
+  alias: string;
+} & Person;
+
 
 const users: User[] = [
   {
