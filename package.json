@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "dev": "vite",
-    "build": "vite build"
+    "build": "npx tsc --noEmit --project \"./tsconfig.app.json\" && vite build"
   },
   "prettier": "@igne-agency/prettier",
   "dependencies": {
