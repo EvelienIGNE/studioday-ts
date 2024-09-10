@@ -10,7 +10,7 @@ Let's play around and do some exercise!
 
 ## How to
 
-You cloned the `all-exercises` branch. Please start by creating a new branch to play on:
+Please start by creating a new branch to play on:
 
 ```
 git checkout -b your-name
