@@ -7,7 +7,7 @@ module.exports = {
     React: true,
     JSX: true,
   },
-  ignorePatterns: ["scripts/**"],
+  // Allow console in this project
   rules: {
     "no-console": 0,
   },
