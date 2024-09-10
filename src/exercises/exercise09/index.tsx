@@ -12,21 +12,15 @@
 // If you want to make it neat: put Form & UserList in separate files, just like a real app!
 // Bonus: got enough time? Style it with css modules!
 
-import { useState } from "react";
+import { UserList } from "./userlist";
 
-type User = {};
+export type User = { name: string };
 
 type FormProps = {};
 
 const Form = ({}: FormProps) => {};
 
-type UserListProps = {};
-
-const UserList = ({}: UserListProps) => {};
-
 export default function Render() {
-  const [users, setUsers] = useState([]);
-
   return (
     <>
       <Form />
