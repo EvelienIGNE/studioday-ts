@@ -3,7 +3,10 @@
 This project serves as base for the igne studio day about Typescript.  
 Let's play around and do some exercise!
 
-⚠️ You are supposed to learn something. So please disable any AI plugins you have running, like copilot.
+## Before you start
+
+- ⚠️ You are supposed to learn something. So please disable any AI plugins you have running, like copilot.
+- This repo uses eslint and prettier. It is recommended you install and configure them as described in the [employee handbook](https://www.notion.so/online-docs/Code-Consistency-8b8723f43a6647b2b94453ced0790148).
 
 ## How to
 
