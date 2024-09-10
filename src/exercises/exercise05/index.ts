@@ -33,4 +33,4 @@ function logUser(user: User) {
 
 users.forEach(logUser);
 
-// Hint: create a new type from  - https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types
+// Hint: create a new type from another - https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types

@@ -16,7 +16,7 @@ enum Role {
 type User = Person & {
   alias: string;
   // role: "user" | "admin";
-  role: keyof typeof Role; // Extra bonus points if you got this :)
+  role: keyof typeof Role; // Extra supa bonus points if you got this ;P
 };
 
 const users: User[] = [
@@ -42,4 +42,4 @@ function logUser(user: User) {
 
 users.forEach(logUser);
 
-// Hint: create a new type from  - https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types
+// Hint: create a new type from another - https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types
