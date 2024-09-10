@@ -1,7 +1,12 @@
-import style from "./app.module.css";
-
 // Import the module you are working with here to see something in your browser
-// import Exercise from "./exercises/exercise01";
+
+// For ts files:
+// import "./exercises/exercise01";
+
+// For tsx files, that export default a component:
+// import Exercise from "./exercises/exercise06";
+
+import style from "./app.module.css";
 
 function App() {
   return (

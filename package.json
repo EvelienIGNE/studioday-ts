@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "prettier": "@igne-agency/prettier",
   "dependencies": {
